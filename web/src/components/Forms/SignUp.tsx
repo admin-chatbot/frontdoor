@@ -60,7 +60,7 @@ export default function SignUp() {
                 <input 
                     {...register("name")}
                     type="text"
-                    placeholder="Nome completo"
+                    placeholder="Complete Name"
                     className={ errors.name ? "block peer rounded-[5px] w-[25rem] mt-5 border-[#C93B32] focus:outline-none focus:border-[#C93B32]  focus:ring-1 focus:ring-[#C93B32]" : "block peer rounded-[5px] mt-5 border-[#AEBBCD] w-[25rem] focus:outline-none focus:ring-1"}
                    />
                 <span className="place-self-start text-[14px] text-[#C93B32]">
@@ -80,7 +80,7 @@ export default function SignUp() {
                 <input 
                     {...register("password")}
                     type="password"
-                    placeholder="Senha"
+                    placeholder="Password"
                     className={ errors.password ? "block peer rounded-[5px] w-[25rem] mt-5 border-[#C93B32] focus:outline-none focus:border-[#C93B32]  focus:ring-1 focus:ring-[#C93B32]" : "block peer rounded-[5px] border-[#AEBBCD] w-[25rem] mt-5 focus:outline-none focus:ring-1"}
                     />
                 <span className="place-self-start text-[14px] text-[#C93B32]">
@@ -90,7 +90,7 @@ export default function SignUp() {
                 <input
                     {...register("confirmPassword")}
                     type="password"
-                    placeholder="Confirme sua senha"
+                    placeholder="Confirm Password"
                     className={ errors.confirmPassword ? "block peer rounded-[5px] w-[25rem] mt-5 border-[#C93B32] focus:outline-none focus:border-[#C93B32]  focus:ring-1 focus:ring-[#C93B32]" : "block peer rounded-[5px] border-[#AEBBCD] w-[25rem] mt-5 focus:outline-none focus:ring-1"}
                     />
                 <span className="place-self-start text-[14px] text-[#C93B32]">
@@ -115,7 +115,7 @@ export default function SignUp() {
 
             <div className="text-[#6D7989] w-[25rem]" >
                     
-                <label className="text-[#404B5A]">Senha deve conter:</label>
+                <label className="text-[#404B5A]">Password Rules:</label>
                             
                 <div className="mt-2 ">
                     <img  src={errors.password?.message ? notRed : checkGreen} className="inline-block mr-2" />
