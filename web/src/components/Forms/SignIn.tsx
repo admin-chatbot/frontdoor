@@ -1,7 +1,4 @@
 import { Link, useNavigate } from "react-router-dom";
-import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
 import apiCall from "../../utils/apiCallHelper";
 import {useState} from "react";
 
@@ -12,6 +9,7 @@ import {useState} from "react";
     }
 
     const SignIn = () => {
+    //defining formData state variable.
     const [formData, setFormData] = useState<ICreateUserData>({
         email: "",
         password: "",
